@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="Promise.js"> </script>
+        <!-- <script src="PromiseAllSettled.js"> </script>
+        <script src="PromiseAny.js"> </script> -->
+    </head>
+    <body>
+
+    </body>
+
+    <script>
+     const p1 = new Promise((resolve, reject)=> reject(9));
+     const p2 = new Promise((resolve, reject)=> reject(8));
+     promiseAll([p1,p2]).then((result) => console.log(result)).catch(error => console.log(error))
+     promiseAllSettled([p1,p2]).then((result) => console.log(result)).catch(error => console.log(error))
+     promiseAny([p1,p2]).then((result) => console.log(result)).catch(error => console.log(error))
+    </script>
+</html>
