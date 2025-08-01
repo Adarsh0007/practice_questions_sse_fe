@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/practice_questions_sse_fe/static/css/main.f967c62d.css",
+    "main.js": "/practice_questions_sse_fe/static/js/main.0495b076.js",
+    "static/js/453.d2bc48a2.chunk.js": "/practice_questions_sse_fe/static/js/453.d2bc48a2.chunk.js",
+    "index.html": "/practice_questions_sse_fe/index.html",
+    "main.f967c62d.css.map": "/practice_questions_sse_fe/static/css/main.f967c62d.css.map",
+    "main.0495b076.js.map": "/practice_questions_sse_fe/static/js/main.0495b076.js.map",
+    "453.d2bc48a2.chunk.js.map": "/practice_questions_sse_fe/static/js/453.d2bc48a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f967c62d.css",
+    "static/js/main.0495b076.js"
+  ]
+}
