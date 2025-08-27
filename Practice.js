@@ -234,3 +234,27 @@ const maxCharCount = (str) => {
 }
 
 console.log(maxCharCount(testString).join(' | ').replace(/,/g, ':'))
+
+
+function curry (fn) {
+  let collected = [];
+
+  function curried (...args) {
+    if (args.length === 0) {
+     return fn.apply(this, collected);
+    }
+    collected = collected.concat(args);
+    return curried;
+  }
+  return curried;
+
+}
+
+const sum = (...nums) => nums.reduce((a,b) => a+b, 0);
+const mul = (...nums) => nums.reduce((a,b) => a*b, 1);
+
+const curriedSum = curry(sum);
+const curriedMul = curry(mul);
+
+console.log(curriedSum(1,2)(4,5)(6,7,8)(1)())
+console.log(curriedMul(1,2)())
